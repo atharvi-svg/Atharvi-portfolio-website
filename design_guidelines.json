@@ -1,0 +1,82 @@
+{
+  "theme": "dark",
+  "art_direction": "Luxury Tech Dark Mode (Archetype 4 & 5 hybrid) - High-contrast, cinematic, and authoritative.",
+  "color_palette": {
+    "background": "#090A0F",
+    "surface": "#12161D",
+    "surface_glass": "rgba(18, 22, 29, 0.6)",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#94A3B8",
+    "accent": "#F5A524",
+    "accent_hover": "#E59513",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "forbidden_colors": ["#FFC0CB", "#800080", "#7351B7", "#FF00FF"]
+  },
+  "typography": {
+    "headings": "Clash Display, 'Cabinet Grotesk', sans-serif",
+    "body": "Satoshi, 'IBM Plex Sans', sans-serif",
+    "marquee": "JetBrains Mono, monospace",
+    "rules": {
+      "H1": "text-5xl md:text-6xl lg:text-[5rem] tracking-tighter leading-[1.05] font-medium",
+      "H2": "text-4xl md:text-5xl tracking-tight leading-tight font-medium",
+      "H3": "text-2xl md:text-3xl tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed text-[#94A3B8]",
+      "labels": "text-xs uppercase tracking-[0.2em] text-[#F5A524]"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 md:py-32",
+    "container": "max-w-[1400px] mx-auto px-6 md:px-12",
+    "grid_strategy": "Asymmetric bento grids. Never fill 100% perfectly. Leave breathing room.",
+    "alignment": "Strictly left-aligned for dense content. Never center-align paragraphs."
+  },
+  "components": [
+    {
+      "name": "Background Paths Hero",
+      "instruction": "Full screen (min-h-screen) with absolute positioned animated SVG paths (using framer-motion pathLength). Masked line-by-line reveal for 'Atharvi Desurkar'. The hero should feel incredibly cinematic with massive negative space."
+    },
+    {
+      "name": "Spotlight Glow Card",
+      "instruction": "React component for the Projects grid. Tracks pointer position to render a radial gradient glow (accent color with low opacity) behind a 1px border. Background should be `surface`. Must feel tactile."
+    },
+    {
+      "name": "Numbered Manifesto (About Section)",
+      "instruction": "Large overlapping numbers (e.g., '01', '02') using `text-[12rem] text-white/5` absolute positioned behind the text to create tension and structural art."
+    },
+    {
+      "name": "Editorial Marquee",
+      "instruction": "Slow, smooth moving text band. Use JetBrains Mono, highly spaced (gap-32), text-[#94A3B8] mixed with outline text. Engine: react-fast-marquee or framer-motion."
+    }
+  ],
+  "motion": {
+    "scroll": "Lenis smooth scroll (momentum scrolling) is MANDATORY.",
+    "reveals": "Framer motion for staggered section reveals. Elements should fade in and translate-y slightly (20px).",
+    "microinteractions": "Hover states on all interactive elements. Focus states must be distinct."
+  },
+  "images": {
+    "profile": "https://images.unsplash.com/photo-1614786269829-d24616faf56d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0JTIwc3R1ZGlvJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzg1OTMzODQxfDA&ixlib=rb-4.1.0&q=85",
+    "hero_abstract": "https://images.unsplash.com/photo-1674027444485-cec3da58eef4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODU5MzM4NDF8MA&ixlib=rb-4.1.0&q=85",
+    "project_1": "https://images.unsplash.com/photo-1646583288948-24548aedffd8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODU5MzM4NDF8MA&ixlib=rb-4.1.0&q=85",
+    "project_2": "https://images.unsplash.com/photo-1716637644831-e046c73be197?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2UlMjB0ZWNobm9sb2d5JTIwZGFya3xlbnwwfHx8fDE3ODU5MzM4NDF8MA&ixlib=rb-4.1.0&q=85",
+    "beyond_tech": "https://images.unsplash.com/photo-1763510385683-6374fac8df54?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxyZWFkaW5nJTIwYm9vayUyMGRhcmslMjBjaW5lbWF0aWN8ZW58MHx8fHwxNzg1OTMzODQxfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "instructions_to_main_agent": [
+    "Build the portfolio using React, Tailwind CSS, and Framer Motion (.js/.jsx files).",
+    "Implement Lenis for smooth momentum scrolling at the root level.",
+    "Use the exact color palette and typography rules specified. DO NOT use pink or purple.",
+    "Ensure `data-testid` is added to all interactive elements (buttons, links, form inputs).",
+    "Formspree contact form should use custom Tailwind styles to match the high-end dark theme (no Vercel-look default styles).",
+    "The Background Paths hero must use absolute positioning behind the main hero text, scaling up on load.",
+    "Spotlight Glow cards must be used for the Projects grid. Use grid-cols-1 md:grid-cols-2 lg:grid-cols-3 layout with Spotlight Glow wrapping each project item.",
+    "Omit CGPA and academic grade details as requested, but include all other experience/skills.",
+    "Include specific sections: About, Skills, Projects (9 items), Research & Experience, Certifications, Beyond Tech, and Contact."
+  ],
+  "universal_guidelines": [
+    "No generic centered layouts (use left-alignment or optical alignment).",
+    "Use glass-morphism effects with backdrop-blur-xl (12-24px blur) for sticky nav. Ensure readable text contrast.",
+    "Never use `transition: all`. Target specific properties like `transition: transform 0.2s ease, opacity 0.2s ease`.",
+    "Add z-index depth (ambient + direct shadow).",
+    "Add micro-animations for hover, focus, and entrance.",
+    "Do not use generic simple gradients; use subtle noise overlays or solid deep colors."
+  ]
+}
