@@ -1,3 +1,4 @@
+import profilePhoto from "../atharvi image.jpeg";
 export const PROFILE = {
   name: "Atharvi Desurkar",
   role: "CSE · AI & ML — PES University",
@@ -11,10 +12,9 @@ export const PROFILE = {
   substack: "https://substack.com/@woveninwords",
   resume: "assets/resume.pdf",
   formspree: "https://formspree.io/f/xgoarvdv",
-  photo:
-    "https://images.unsplash.com/photo-1614786269829-d24616faf56d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0JTIwc3R1ZGlvJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzg1OTMzODQxfDA&ixlib=rb-4.1.0&q=85",
-};
 
+  photo: profilePhoto,
+};
 export const MANIFESTO = [
   {
     n: "01",
